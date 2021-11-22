@@ -1,1 +1,6 @@
-
+cas = float(input("Zadejte cas (min): "))
+cas = cas / 60
+draha = float(input("Zadejte drahu (m): "))
+draha = draha / 1000
+rychlost =  draha / cas
+print("Vase rychlost je:", rychlost, "km/h")
