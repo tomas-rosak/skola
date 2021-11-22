@@ -4,3 +4,16 @@ draha = float(input("Zadejte drahu (m): "))
 draha = draha / 1000
 rychlost =  draha / cas
 print("Vase rychlost je:", rychlost, "km/h")
+
+prijem_1 = float(input("Zadejte 1. prijem (Kc): "))
+prijem_2 = float(input("Zadejte 2. prijem (Kc): "))
+prijem_3 = float(input("Zadejte 3. prijem (Kc): "))
+vydaj_1 = float(input("Zadejte 1. vydaj (Kc): "))
+vydaj_2 = float(input("Zadejte 2. vydaj (Kc): "))
+vydaj_3 = float(input("Zadejte 3. vydaj (Kc): "))
+prijem = prijem_1 + prijem_2 + prijem_3
+vydaj = vydaj_1 + vydaj_2 + vydaj_3
+print("Vase prijmy jsou:", prijem, "Kc")
+print("Vase vydaje jsou:", vydaj, "Kc")
+bilance = prijem - vydaj
+print("Vase bilance je:", bilance, "Kc")
