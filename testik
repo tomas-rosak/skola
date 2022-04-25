@@ -1,19 +1,23 @@
-cas = float(input("Zadejte cas (min): "))
-cas = cas / 60
-draha = float(input("Zadejte drahu (m): "))
-draha = draha / 1000
-rychlost =  draha / cas
-print("Vase rychlost je:", rychlost, "km/h")
+import random
+pocet = int(input())
+p = []
+for i in range(pocet):
+    prvek = random.randint(1,100)
+    p.append(prvek)
+print("seznam P:", p)
+soucet = 0
+for i in p:
+    soucet += i 
+print("Soucet pole P:", soucet)
+r = []
+for i in p:
+    prvek = soucet - i
+    r.append(prvek)
+print("seznam R:", r)
 
-prijem_1 = float(input("Zadejte 1. prijem (Kc): "))
-prijem_2 = float(input("Zadejte 2. prijem (Kc): "))
-prijem_3 = float(input("Zadejte 3. prijem (Kc): "))
-vydaj_1 = float(input("Zadejte 1. vydaj (Kc): "))
-vydaj_2 = float(input("Zadejte 2. vydaj (Kc): "))
-vydaj_3 = float(input("Zadejte 3. vydaj (Kc): "))
-prijem = prijem_1 + prijem_2 + prijem_3
-vydaj = vydaj_1 + vydaj_2 + vydaj_3
-print("Vase prijmy jsou:", prijem, "Kc")
-print("Vase vydaje jsou:", vydaj, "Kc")
-bilance = prijem - vydaj
-print("Vase bilance je:", bilance, "Kc")
+obory = {"V": {"cely_nazev": "Informační a komunikační technologie", "pocet": "280"}, "I": {"cely_nazev": "Ekonomika a podnikání", "pocet": "123"}, "M": {"cely_nazev": "Mechanik elektrotechnik", "pocet": "53"}, "E": {"cely_nazev": "Průmyslová ekologi", "pocet": "76"},  "S": {"cely_nazev": "Sociální činnost", "pocet": "312"}}
+celkem_pocet = 0
+for i in obory:
+  print(i+"   "+obory[i]["cely_nazev"]+"   "+obory[i]["pocet"])
+
+
