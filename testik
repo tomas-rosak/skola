@@ -18,6 +18,8 @@ print("seznam R:", r)
 obory = {"V": {"cely_nazev": "Informační a komunikační technologie", "pocet": "280"}, "I": {"cely_nazev": "Ekonomika a podnikání", "pocet": "123"}, "M": {"cely_nazev": "Mechanik elektrotechnik", "pocet": "53"}, "E": {"cely_nazev": "Průmyslová ekologi", "pocet": "76"},  "S": {"cely_nazev": "Sociální činnost", "pocet": "312"}}
 celkem_pocet = 0
 for i in obory:
-  print(i+"   "+obory[i]["cely_nazev"]+"   "+obory[i]["pocet"])
+    print(i+"\t"+obory[i]["cely_nazev"]+"\t"+obory[i]["pocet"])
+    celkem_pocet += int(obory[i]["pocet"])
+print("Celkem studentu:", celkem_pocet)
 
 
